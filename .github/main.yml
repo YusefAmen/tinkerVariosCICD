@@ -1,0 +1,20 @@
+name: CI/CD Pipeline (GitOps)
+
+on:
+  push:
+    branches: [main] # source of truth main branch declaring state of all infra and app state
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest # job will run on fresh ubuntu VM
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2 # Pulls the repository code into the runner
+  test:
+    runs-on: ubuntu-latest # job will run on fresh ubuntu VM
+    steps:
+      - name: Lint
+        uses: 
+      - name: Build
+        uses: requirements.txt
+      -
