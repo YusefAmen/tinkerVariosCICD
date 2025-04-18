@@ -2,7 +2,7 @@
 FROM python:3.8 AS builder
 WORKDIR /app
 COPY . /app
-RUN pip install --upgrade pip %% pip install flask
+RUN pip install --upgrade pip && pip install flask
 
 # Stage 2: Runtime minimal image
 FROM python:3.8-slim
