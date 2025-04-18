@@ -21,7 +21,7 @@ jobs:
           IMAGE_NAME: tinker
         run: | 
           docker build -t $DOCKERHUB_USERNAME/$IMAGE_NAME .
-        docker push $DOCKERHUB_USERNAME/$IMAGE_NAME:latest 
+          docker push $DOCKERHUB_USERNAME/$IMAGE_NAME:latest 
   test:
     runs-on: ubuntu-latest # job will run on fresh ubuntu VM
     steps:
