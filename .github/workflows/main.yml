@@ -39,8 +39,5 @@ jobs:
         run: | 
           pip install pytest
           pytest test.py
-      - name: Lint
-        uses: 
-      - name: Build
-        uses: requirements.txt
-      -
+      #- name: Lint
+      #  uses: flakes8 
